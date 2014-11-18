@@ -1,0 +1,37 @@
+
+<div class="row">
+  <div class="small-7 columns">
+    <!-- MAIN CONTENT GOES HERE -->
+    <h3>Locations</h3>
+
+    <table class="table">
+      <tr>
+        <th width="200">ID</th>
+        <th width="200">Name</th>
+        <th width="200">Active</th>
+        <th></th>
+        <th></th>
+      </tr>
+
+    <% @locations.each do |location| %>
+      <tr>
+        <td><%= location.id %></td>
+        <td><%= link_to location.name, location_path(location) %></td>
+        <td align="center"><%= location.active %></td>
+        <td><%= link_to 'Edit', edit_location_path(location), class: "button tiny radius" %></td>
+      </tr>
+    <% end %>
+    </table>
+    <!-- Add the pagination using will_paginate gem -->
+    <span class="paginate">
+    <%= will_paginate @locations, :previous_label => "Previous&nbsp;", :next_label => "&nbsp;Next" %>
+    </span>
+    <br />
+    <%= link_to "Add a new location", new_location_path, class: "button tiny radius" %>
+  </div>
+
+  <div class="small-1 columns">
+    &nbsp;
+  </div>
+
+</div>

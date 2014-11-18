@@ -9,7 +9,8 @@ gem 'pg'
 gem 'mysql2'
 
 gem 'ferry'
-gem 'progressbar'
+# gem 'progressbar'
+# gem 'highline'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

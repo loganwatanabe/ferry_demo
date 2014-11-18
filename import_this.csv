@@ -1,2 +1,1 @@
-id,name,street_1,street_2,city,state,zip,max_capacity,latitude,longitude,active
-5,TEST TEST 1 2,3120 Alani Drive,Honolulu,HI,96822, 7, , ,t
+id,name,street_1,street_2,city,state,zip,max_capacity,latitude,longitude,active1000,Dupe,563Kamoku Street,,Honolulu,HI,94363,7,21.310053,-157.801116,t999,TEST TEST 1 2,3120 Alani Drive,,Honolulu,HI,96822,7,21.310053,-157.801116,t
